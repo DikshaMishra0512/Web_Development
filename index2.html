@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" and dir="ltr">
+<head>
+<meta charset="utf-8">
+<title> Video Gallery</title>
+<!-- Or from a CDN -->
+<script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="img-container">
+        <h1> CREATIVITY AT A GLANCE</h1>
+        <div class="content">
+    <div id="img-container" style="width: 500px">
+        <img src="../media/collage.jpg" height="500px" width="500px">
+    </div>
+    <div class="C">
+    <p>Move the cursor on the image to magnify</p>
+    <img src="https://lh3.googleusercontent.com/proxy/HaopdrwxJ3i3UdTGtT8kZsOUUWjIDy7Q4iJ8ReGarZGB5UzuN1zbuy4du3d3Hf9rTjcKRcSOPp8ulBKFNNePw-LSDNrv5LU" height="100px" width="100px">
+</div>
+       <script>
+            var options = {
+                width: 400,
+                height: 250,
+                zoomwidth: 500,
+                offset: {vertical: 0, horizontal: 10},
+                scale: 1.5
+            }
+            new ImageZoom(document.getElementById("img-container"), options);
+        </script>
+        </div>
+        </div>
+        
+<div class="container">
+        <h1>SUNDAY SCHOOL PARENTS FEEDBACK</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="../media/I.jpg.png" width="100%" height="510px">
+                    <img src="../media/playbut1.jpg" class="play-btn"
+                    onclick="playVideo('../media/video.mp4')">
+
+                </div>
+            </div>  
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../media/I1.jpg.png" width="100%" height="110px">
+                        <img src="../media/playbut1.jpg" class="play-btn"
+                        onclick="playVideo('../media/video1.mp4')">
+                    </div>
+                    <p>Little baby resided Hare-Krishna Mahamantra</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../media/I2.jpg.png" width="100%" height="110px">
+                        <img src="../media/playbut1.jpg" class="play-btn"
+                        onclick="playVideo('../media/video2.mp4')">
+                    </div>
+                    <p>Little kid resided Hare-Krishna Mahamantra</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../media/I3.jpg.png" width="100%" height="110px">
+                        <img src="../media/playbut1.jpg" class="play-btn"
+                        onclick="playVideo('../media/video3.mp4')">
+                    </div>
+                    <p>Bhagwad-Geeta chapter 4</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../media/I4.jpg.png" width="100%" height="110px">
+                        <img src="../media/playbut1.jpg" class="play-btn"
+                        onclick="playVideo('../media/video4.mp4')">
+                    </div>
+                    <p>Little sudama</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="1000px" height="600px" controls autoplay id="myVideo">
+            <source src="../media/video.mp4.mp4" type="video/mp4">
+        </video>
+        <img src="../media/closebtn.jpg.jpg" class="close-btn"
+        onclick="stopVideo()">
+    </div> 
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display="none";
+        }
+        function playVideo(file){
+            myVideo.src=file;
+            videoPlayer.style.display="block";
+        }
+    </script>
+</body>

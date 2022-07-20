@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding : 0;
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEuSKv1VSK9XoW7PdK-Lpm0TmcW6RfFL9Xw&usqp=CAU");
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: 80px auto;
+}
+.container h1{
+    padding: 60px 0;
+    color:#fff;
+    font-size: 44px;
+    text-align: center;
+}
+.img-container{
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    padding: 100px 100px;
+}
+.img-container h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.content-right{
+    width: 30%;
+    margin-left: 10rem;
+}
+.content-right h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
